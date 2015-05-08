@@ -8,5 +8,5 @@ unsigned int most_signifcant(unsigned int num) {
 			bit += i;
 		}
 	}
-	return ++ret;
+	return ++bit;
 }
