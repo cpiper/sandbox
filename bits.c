@@ -1,5 +1,6 @@
 unsigned int most_signifcant(unsigned int num) {
-	i = sizeof(mask) << 2, bit = 0;
+	unsigned int i = sizeof(mask) << 2, bit = 0;
+	bit += !!num;
 	if (!num)
     		return 0;
 	for (;i > 0; i >>= 1) {
