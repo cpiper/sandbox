@@ -3,12 +3,10 @@ unsigned int most_signifcant(unsigned int num) {
 	if (!num)
     		return 0;
 	for (;i > 0; i >>= 1) {
-		if (num & mask << i) {
-			mask = (mask << i) & mask;
-			bit += i;
-		} else {
-			mask = (mask >> i) & mask;
+		if (num >> i) {
+			num >>= i;
+			ret += i;
 		}
 	}
-	return bit + 1;
+	return ++ret;
 }
