@@ -1,5 +1,5 @@
 unsigned int most_signifcant(unsigned int num) {
-	unsigned int bit = 0, i = sizeof(bit) << 2;
+	unsigned int bit = 0, i = sizeof(num) << 2;
 	bit += !!num;
 	for (;i > 0; i >>= 1) {
 		if (num >> i) {
